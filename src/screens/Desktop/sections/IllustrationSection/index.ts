@@ -1,0 +1,1 @@
+export { IllustrationSection } from "./IllustrationSection";

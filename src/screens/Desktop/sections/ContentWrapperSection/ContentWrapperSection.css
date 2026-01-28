@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+
+  .contentWrapper {
+   
+    
+  }
+
+  /* O container que segura: 
+     [imagem esquerda] [texto] [imagem direita]
+     precisa virar COLUNA no mobile */
+  .contentWrapper .max-w-5xl,
+  .contentWrapper .flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+  }
+
+  /* Texto central reduzido */
+  .textContentWrapper {
+    transform: scale(0.5);
+    transform-origin: center;
+  }
+
+  /* Imagem da esquerda (quote-right) */
+  .contentWrapper img[alt="Quote right"] {
+    width: 150px !important;
+    height: auto !important;
+  }
+
+  /* Imagem da direita (group-9.png) */
+  .contentWrapper img[alt="Group"] {
+    width: 120px !important;
+    height: auto !important;
+  }
+
+  /* Frame inferior */
+  .contentWrapper img[alt="Frame"] {
+    width: 100% !important;
+    max-width: 330px !important;
+    padding-left: 0 !important;
+    margin: 0 auto;
+  }
+}

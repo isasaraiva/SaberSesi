@@ -1,0 +1,40 @@
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 32px;
+    padding: 2rem 0rem 0rem;
+    max-width: 95vw;
+    text-align: center;
+    line-height: 1.1;
+    scale: 0.8;
+  }
+  .hero-img-heart {
+    left: 55%;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: 95vw;
+    padding-top: 0rem;
+     scale: 1.5;
+  }
+  .hero-section {
+    min-height: 350px;
+    height: auto;
+    padding-bottom: 0;
+  }
+  .hero-pai {
+    padding-bottom: 6rem;
+    height: 700px;
+  }
+}
+
+.hero-title {
+  font-family: 'Paytone_One', Helvetica, sans-serif;
+}
+
+.hero-img-heart {
+  transition: all 0.3s;
+}
+
+.hero-section {
+  min-height: 600px;
+  position: relative;
+}

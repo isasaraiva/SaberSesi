@@ -1,0 +1,40 @@
+#######################################
+# BUILD DA IMAGEM
+build-main:
+  stage: build-image
+  only:
+    - main 
+  tags: 
+    - runner-dev-docker
+  environment:
+    name: main
+  image: docker:stable
+  #services:
+  #  - docker:dind
+  variables:
+    DOCKER_HOST: unix:///var/run/docker.sock
+    DOCKER_DRIVER: overlay2
+  before_script:
+    - echo "$CI_REGISTRY_PASSWORD_IST" | docker login $CI_REGISTRY_DEV -u $CI_REGISTRY_USER_IST --password-stdin
+  script:
+    - docker build -t registry-dev.sfiec.org.br/ist/${PROJECT}:${CI_COMMIT_SHORT_SHA} -f ./Dockerfile . --no-cache
+    - docker tag registry-dev.sfiec.org.br/ist/${PROJECT}:${CI_COMMIT_SHORT_SHA} registry-dev.sfiec.org.br/ist/${PROJECT}:latest-main
+    - docker push registry-dev.sfiec.org.br/ist/${PROJECT}:${CI_COMMIT_SHORT_SHA}
+    - docker push registry-dev.sfiec.org.br/ist/${PROJECT}:latest-main
+    - echo "Build e Push API - concluídos com sucesso!"
+  retry: 2
+
+# DEPLOY NO SWARM
+deploy-main:
+  stage: deploy
+  tags: 
+    - runner-shell-srvdkr07
+  environment:
+    name: main
+  before_script:
+    - echo "$CI_REGISTRY_PASSWORD_IST" | docker login $CI_REGISTRY_DEV -u $CI_REGISTRY_USER_IST --password-stdin
+  script:
+    # Deploy da Stack
+    - docker stack deploy -c stack-main.yml --with-registry-auth ${PROJECT}-main
+  only:
+    - main

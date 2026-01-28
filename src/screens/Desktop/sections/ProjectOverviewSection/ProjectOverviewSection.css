@@ -1,0 +1,35 @@
+@media (max-width: 600px) {
+
+    .sobreTitulo {
+    font-size: 28px !important;  
+    line-height: 34px !important;
+    max-width: 90% !important;
+    text-align: center;
+    margin-left: 15px;
+    }
+.sobreTexto {
+    font-size: 14px !important;    
+    line-height: 22px !important;
+    max-width: 90% !important;
+    text-align: center !important;
+    margin-left: 20px;
+    }
+    .sobreImgTitulo {
+    margin-bottom: 2px !important ;
+
+}
+ .sobreTexto-pai {
+    margin-top: 40px;
+  }
+
+ .sobre-pai {
+    max-width: 100% !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #project-overview {
+    padding: 40px 16px !important;
+    text-align: center;
+  }
+}

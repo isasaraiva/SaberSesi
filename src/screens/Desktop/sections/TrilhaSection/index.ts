@@ -1,0 +1,2 @@
+export { TrilhaSection } from './TrilhaSection';
+   

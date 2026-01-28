@@ -1,0 +1,59 @@
+/* ================================
+   📱 MOBILE - até 600px
+   ================================ */
+@media (max-width: 600px) {
+
+  /* Diminui o padding geral da seção */
+  .IllustrationSection,
+  section.relative.w-full.bg-\[\#0346c8\] {
+    padding: 60px 20px !important;
+  }
+
+  /* Remove imagens absolutas que invadem a tela */
+  section img[alt="Star"],
+  section .absolute.bg-white,
+  section .absolute.bg-\[\#ffd505\] {
+    transform: scale(0.6);
+    top: auto !important;
+    right: auto !important;
+    left: 10px !important;
+    bottom: 10px !important;
+    opacity: 0.4;
+  }
+
+  /* Frame principal */
+  section img[alt="Frame"] {
+    width: 180px !important;
+    height: auto !important;
+    margin: 0 auto 40px auto !important;
+    display: block;
+  }
+
+  /* Título Pilares */
+  section div[style],
+  section .font-semibold.text-\[\#ffe885\] {
+    font-size: 28px !important;
+    line-height: 26px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  /* Texto principal */
+  section .text-2xl {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-align: left !important;
+    padding: 0 10px !important;
+  }
+
+  /* Linhas sublinhadas “Tecnológico / Mão na Massa / Instrucional” */
+  section span.relative img {
+    width: 80% !important;
+    top: 12px !important;
+  }
+
+  /* Bloco inteiro mais compacto */
+  section .max-w-\[1182px\] {
+    max-width: 100% !important;
+  }
+}

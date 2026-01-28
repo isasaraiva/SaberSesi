@@ -1,0 +1,20 @@
+
+
+@media (max-width: 600px) {
+
+  .importanceTitle h2 {
+    font-size: 28px !important;   /* antes 49px */
+    line-height: 34px !important;
+    max-width: 90% !important;
+  }
+
+  .importanceText p {
+    font-size: 14px !important;    /* antes 27.8px */
+    line-height: 22px !important;
+    max-width: 90% !important;
+  }
+
+  .importanceMb {
+    margin-bottom: 10px !important;
+  }
+}

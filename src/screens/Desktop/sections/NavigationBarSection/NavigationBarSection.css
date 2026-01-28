@@ -1,0 +1,103 @@
+/* ==========================
+   RESET PARA EVITAR SCROLL
+========================== */
+nav, body, html {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* ==========================
+   ESTILOS NORMAIS (DESKTOP)
+========================== */
+.navB {
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 153px;
+  padding-right: 153px;
+}
+
+.linksNav {
+  display: flex;
+  flex-direction: row;
+}
+
+/* MOBILE: até 640px */
+@media (max-width: 640px) {
+  .linksNav {
+    display: flex !important;        /* força flex */
+    flex-direction: column !important; /* força coluna */
+    width: 100% !important;           
+   
+  }
+
+  .linksNav a,
+  .linksNav li {
+    width: 100% !important;          /* força cada item a ocupar uma linha */
+    display: block !important;
+    text-align: left;                 /* opcional */
+  }
+}
+
+.logo3s {
+  width: 200px;
+  height: 60px;
+}
+
+/* ==========================
+   RESPONSIVIDADE (MOBILE)
+   TELAS MENORES QUE 768px
+========================== */
+@media (max-width: 768px) {
+
+  .navB {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  /* Logo esquerda */
+  .logosaber {
+  height: 40px !important;
+    flex-shrink: 0;
+  }
+
+  /* Links no meio */
+  .linksNav {
+    gap: 12px !important;
+    font-size: 12px !important;
+    flex-wrap: wrap;
+    max-width: 120px;
+    justify-content: center;
+  }
+
+  /* Logo direita */
+  .logo3s {
+   display: none !important; ;
+  }
+}
+
+/* ==========================
+   MOBILE MUITO PEQUENO
+   TELAS MENORES QUE 390px
+========================== */
+@media (max-width: 390px) {
+
+  .linksNav {
+    max-width: 100px;
+    font-size: 10px !important;
+    gap: 6px !important;
+  }
+
+  .logoSaber {
+    width: 80px !important;
+  }
+
+  .logo3s {
+   display: none !important; ;
+  }
+}

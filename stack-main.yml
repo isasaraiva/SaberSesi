@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  web:
+    image: registry-dev.sfiec.org.br/ist/saber-letramento-saude:latest-main
+    networks:
+      - rede_lan
+    deploy:
+      replicas: 1
+
+networks:
+  rede_lan:
+    external: true
+

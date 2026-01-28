@@ -1,0 +1,16 @@
+#Stages da pipeline
+image: docker:stable
+
+stages:
+  - build-image
+  - deploy
+ #- code-analysis
+ 
+
+include:
+    - '.gitlab/prod.yml'
+
+variables:
+  PROJECT: "saber-letramento-saude"
+
+  

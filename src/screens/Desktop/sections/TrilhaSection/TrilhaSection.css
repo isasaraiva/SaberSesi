@@ -1,0 +1,64 @@
+
+
+.trilha-section {
+    padding: 32px;
+    background-color: #9d09ff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.trilha-title  {
+    font-size: 32px;
+    padding: 2rem 0rem 0rem;
+    max-width: 95vw;
+    text-align: center;
+    line-height: 1.1;
+    scale: 0.8;
+  }
+
+.trilha-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 32px;
+    padding: 2rem 0rem 0rem;
+    max-width: 95vw;
+    text-align: center;
+    line-height: 1.1;
+    scale: 0.8;
+  }
+  .hero-img-heart {
+    left: 55%;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: 95vw;
+    padding-top: 0rem;
+     scale: 1.5;
+  }
+  .hero-section {
+    min-height: 350px;
+    height: auto;
+    padding-bottom: 0;
+  }
+  .hero-pai {
+    padding-bottom: 6rem;
+    height: 700px;
+  }
+}
+
+.hero-title {
+  font-family: 'Paytone_One', Helvetica, sans-serif;
+}
+
+.hero-img-heart {
+  transition: all 0.3s;
+}
+
+.hero-section {
+  min-height: 600px;
+  position: relative;
+}
