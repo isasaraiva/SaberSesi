@@ -7,12 +7,13 @@
 }
 
 .trilha-title  {
-    font-size: 32px;
+    font-size: 27px;
     padding: 2rem 0rem 0rem;
     max-width: 95vw;
     text-align: center;
     line-height: 1.1;
     scale: 0.8;
+    font-family: libre-franklin, sans-serif;
   }
 
 .trilha-content {

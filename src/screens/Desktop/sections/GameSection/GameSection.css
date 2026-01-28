@@ -1,0 +1,21 @@
+.game-section {
+    background-color: #0346C8;
+    position: relative;
+    max-width:100%;
+    min-height: 1162px;
+    padding-left: 70px;
+    padding-top: 70px;
+}
+.h2 {
+    padding-top: 20px;
+    color: rgb(255, 232, 133, 1);
+    font-size: 24px;
+   
+}
+
+
+.text-game {
+    color: rgb(255, 232, 133, 1);
+    font-size: 18px;
+    font-family: libre-franklin, sans-serif;
+}

@@ -76,10 +76,10 @@ export const TrilhaSection = (): JSX.Element => {
                         fontSize: '27px',
                     }}
                 >
-                    <p>
+                    <p style={{ fontFamily: "'Libre Franklin', sans-serif", fontWeight: 'normal', fontSize: '27px' }}>
                         A Trilha Pedagógica do Projeto de Letramento em Saúde foi desenvolvida para guiar educadores na implementação de oficinas e atividades educativas que promovem o letramento em saúde entre crianças e adolescentes da rede SESI. Cada eixo temático apresenta objetivos de aprendizagem, competências, metodologias, espaços de aprendizagem e recursos bibliográficos cuidadosamente selecionados.
                     </p>
-                    <p style={{ padding: '50px' }}>
+                    <p style={{ padding: '50px', fontFamily: "'Libre Franklin', sans-serif" }}>
                         <span style={{ color: '#84E2F7' }}>Unidades Piloto: </span>
                         <span>Escola SESI SENAI Maracanaú, Parangaba e Centro</span>
                     </p>
